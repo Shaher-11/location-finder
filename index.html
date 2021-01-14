@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=dark-mode>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,38 @@
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
 integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Location Finder</title>
-    <style>
-        .icon-remove,
-        .icon-check {
-                     display: none;
-                                    }
-    </style>
+
+
 </head>
-<body>
-<style>
-    html {
-        background-color: rgb(149, 211, 197);
+<body class="dark-mode">
+
+
+  <style>
+    body,html {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
     }
-</style>
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button onclick="myFunction()">Light mode</button>
+    
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+    
+
 <section class="hero hero-body is-dark container">
     <h1 class="title">Canada Location Info</h1>
     <h2 class="subtitle">Enter a postal code to get the location info</h2> 
